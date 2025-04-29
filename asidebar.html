@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .container
+    {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        
+        background-color: black;
+
+    }
+    .aside
+    {
+        width: 20%;
+        height: inherit;
+        background-color: aqua;
+    }
+    .section
+    {
+        width: 100%;
+        height: inherit;
+        
+    }
+    i{
+        font-size: 30px;
+        color: white;
+        right: 140px;
+        position: absolute;
+    }
+    #menu:checked + .aside
+    {
+        width: 0%;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    a
+
+    
+    label
+    {
+        position:absolute;
+        left: 10%;
+
+    }
+    #menu
+    {
+        display: none;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <label for="menu" id="menubar">
+            <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu" >
+ 
+        <div class="aside">
+                  </div>
+        <div class="section">
+
+        </div>
+    </div>
+</body>
+</html>
